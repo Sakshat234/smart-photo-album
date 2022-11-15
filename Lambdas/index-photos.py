@@ -134,7 +134,7 @@ def lambda_handler(event, context):
         obj = json.dumps(obj).encode("utf-8")
         req = requests.post(url, auth=awsauth, headers=headers, data=obj)
         
-        print("Success: ", req)
+        print("Success Yesss: ", req)
         # return {
         #     'statusCode': 200,
         #     'headers': {
