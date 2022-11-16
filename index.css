@@ -35,9 +35,9 @@
 }
 
 body {
-   font-family: Georgia, serif;
+   font-family: "Times New Roman", Times, serif;
     color: #5b2f5d;
-    background-color: #eedaf4;
+    background-color: white;
 }
 
 .container-fluid {
