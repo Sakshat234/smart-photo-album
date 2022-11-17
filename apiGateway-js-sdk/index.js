@@ -61,8 +61,14 @@ function searchPhotos(searchText) {
     var params = {
         'q' : searchText
     };
+    var additionalParams = {
+        headers: {
+            
+            'x-api-key': '1yqF9nnQSS3JMtcrClWfX83MgXzzRZBJ4I69wb3q'
+        }
+    }
     
-    apigClient.searchGet(params, {}, {})
+    apigClient.searchGet(params, {}, additionalParams)
         .then(function(result) {
             console.log("Result : ", result);
 
@@ -133,6 +139,7 @@ function uploadPhoto() {
         var additionalParams = {
             headers: {
                 'Access-Control-Allow-Origin': '*',
+                'x-api-key': '1yqF9nnQSS3JMtcrClWfX83MgXzzRZBJ4I69wb3q'
             }
         };
   
