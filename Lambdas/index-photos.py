@@ -119,8 +119,8 @@ def lambda_handler(event, context):
         endpoint = 'https://search-photos-dbypzpautg4of7jj4qwigzvqne.us-east-1.es.amazonaws.com'
         region = 'us-east-1'
         service = 'es'
-        credentials = boto3.Session(aws_access_key_id="AKIAXTM5C73AZUD7K2MP",
-                          aws_secret_access_key="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", 
+        credentials = boto3.Session(aws_access_key_id="",
+                          aws_secret_access_key="", 
                           region_name="us-east-1").get_credentials()
         awsauth = AWS4Auth(credentials.access_key, credentials.secret_key, region, service, session_token=credentials.token)
         # awsauth = (os.environ['sakshat1'], os.environ['Skmusic234*'])
